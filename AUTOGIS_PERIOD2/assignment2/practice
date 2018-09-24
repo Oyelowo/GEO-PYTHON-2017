@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov  6 12:33:42 2017
+
+@author: oyeda
+"""
+
+import geopandas as gpd
+filepath=r"C:\Users\oyeda\Desktop\AUTOGIS\AUTOGIS_PERIOD2\assignment2\Data\DAMSELFISH_distributions.shp"
+data =  gpd.read_file(filepath)
+
+#print the head
+data.head
+
+
+data.plot()

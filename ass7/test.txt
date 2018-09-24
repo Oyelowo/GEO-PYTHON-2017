@@ -1,0 +1,81 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 22 22:30:26 2017
+
+@author: oyeda
+"""
+import pandas as pd
+import matplotlib.pyplot as plt
+from datetime import datetime
+import numpy as mp
+
+#The goal for this problem is to make this plot.
+
+#For Problem 2, the goal is to recreate the plot above, a 4-panel plot showing seasonal 
+#temperature anomalies from 1953-2016. To do this, you should:
+
+#Start by creating a new Python script called anomaly_subplots.py and performing steps 
+#1-3 from Problem 1 to prepare the data for plotting.
+#Create a yearly Pandas datetime index from 1953-2016 using the pd.date_range() function.
+#Create an empty Pandas DataFrame called seasonalData using the index you just created
+#and column titles 'Winter', 'Spring', 'Summer', and 'Fall'.
+#Fill the data frame with mean temperatures for each season in each year.
+#Assume that Winter is December-February, Spring is March-May, Summer is June-
+#August, and Fall is September-November.
+#Create a figure with 4 subplots in the arrangement shown above, labeling axes as needed, 
+#with gridlines on, and with a line legend for each panel.
+#You can find tips about these different plot features in the Matplotlib documentation 
+#and the hints for this week's exercise.
+#Save your Python script in GitHub and include a copy of the plot it produces in
+#your answer to Problem 2 below.
+
+
+data_h = pd.read_csv('C:/Users/oyeda/Desktop/AUTOGIS/ass7/helsinki.csv', sep=',', parse_dates=['DATE_yrmo'])
+
+data_h['DATE_yrmo'] = pd.to_datetime(data_h['DATE_yrmo'], format = '%Y%m')
+data_h = data_h.set_index('DATE_yrmo')
+
+#create the time index for 1953 till 2016
+timeindex = pd.date_range('1953', '2016', freq='M')
+print(timeindex)
+
+season_Temp = pd.DataFrame(index=timeindex, columns=['Winter', 'Spring', 'Summer', 'Fall'])
+
+for i in timeindex:
+    meanValue = data_h[i-1:i+1]['TAVG_CELS'].mean()
+    season_Temp.loc[i, 'Winter'] = meanValue
+
+    meanValue1 = data_h[i+2:i+4]['TAVG_CELS'].mean()
+    season_Temp.loc[i, 'Spring'] = meanValue1
+
+    meanValue2 = data_h[i+5:i+7]['TAVG_CELS'].mean()
+    season_Temp.loc[i, 'Summer'] = meanValue2
+
+    meanValue3 = data_h[i+8:i+10]['TAVG_CELS'].mean()
+    season_Temp.loc[i, 'Fall'] = meanValue3
+
+
+
+if data_h['year-1':]
+data_h.index[0]
+
+data_h['DATE_yrmo']
+    
+    meanValue = dataFrame['2016-12':'2017-02']['TEMP'].mean()
+This would assign the mean value for the TEMP field between December 2016 and February 2017 to the variable meanValue. In terms of storing the output value, we can use the DataFrame.loc() function. For example:
+
+dataFrame.loc[year, 'coldSeason'] = 5
+
+
+
+
+
+
+
+
+closew
+for i in range(1953,2017):
+    current =i
+    previous = i-1
+    meanValue = data_h[str(previous)+'-12':str(current)+'-2']['TAVG_CELS'].mean()
+    season_Temp.loc[i, 'Winter'] = meanValue

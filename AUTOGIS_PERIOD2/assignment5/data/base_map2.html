@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_42a068dfdfbd427e89020ab7caf4addc {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_42a068dfdfbd427e89020ab7caf4addc" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_42a068dfdfbd427e89020ab7caf4addc = L.map(
+                                  'map_42a068dfdfbd427e89020ab7caf4addc',
+                                  {center: [60.25,24.8],
+                                  zoom: 10,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            L.control.scale().addTo(map_42a068dfdfbd427e89020ab7caf4addc);
+        
+    
+            var tile_layer_8bd9e3fee27b4791a88a0600a5331b6b = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_42a068dfdfbd427e89020ab7caf4addc);
+        
+    
+            var marker_cluster_763718e8c87b43e498ce1a5f3a11ae1d = L.markerClusterGroup({
+                
+            });
+            map_42a068dfdfbd427e89020ab7caf4addc.addLayer(marker_cluster_763718e8c87b43e498ce1a5f3a11ae1d);
+            
+    
+            var marker_cluster_c2488562eb7e478087394f6774f79b9e = L.markerClusterGroup({
+                
+            });
+            map_42a068dfdfbd427e89020ab7caf4addc.addLayer(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var regular_polygon_marker_9a10192682094700a4afaee11ec4bd28 = new L.RegularPolygonMarker(
+                new L.LatLng(60.1683731,24.930170100000005),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_ffdeae9cdc19411e9ee5c5f3c2933165 = L.popup({maxWidth: '300'});
+
+            
+                var html_0b7ea032ce174ad5bdd09fdb6b0ea464 = $('<div id="html_0b7ea032ce174ad5bdd09fdb6b0ea464" style="width: 100.0%; height: 100.0%;">Kampinkuja 1, 00100 Helsinki, Finland</div>')[0];
+                popup_ffdeae9cdc19411e9ee5c5f3c2933165.setContent(html_0b7ea032ce174ad5bdd09fdb6b0ea464);
+            
+
+            regular_polygon_marker_9a10192682094700a4afaee11ec4bd28.bindPopup(popup_ffdeae9cdc19411e9ee5c5f3c2933165);
+
+            
+        
+    
+            var regular_polygon_marker_9392ae5a4d344f69abcbd2a0f9e72dac = new L.RegularPolygonMarker(
+                new L.LatLng(60.169866500000005,24.9418933),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_b3e92251271c4bbfb2e9f539c6739ec9 = L.popup({maxWidth: '300'});
+
+            
+                var html_3f241beca439477c8b8f529662883663 = $('<div id="html_3f241beca439477c8b8f529662883663" style="width: 100.0%; height: 100.0%;">Kaivokatu 8, 00101 Helsinki, Finland</div>')[0];
+                popup_b3e92251271c4bbfb2e9f539c6739ec9.setContent(html_3f241beca439477c8b8f529662883663);
+            
+
+            regular_polygon_marker_9392ae5a4d344f69abcbd2a0f9e72dac.bindPopup(popup_b3e92251271c4bbfb2e9f539c6739ec9);
+
+            
+        
+    
+            var regular_polygon_marker_4efd789b6a95418389009b5726abd517 = new L.RegularPolygonMarker(
+                new L.LatLng(60.18735880000001,24.9774004),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_32a5a90b792946d7865801ed7f5b0181 = L.popup({maxWidth: '300'});
+
+            
+                var html_c6fb645f395342aca8f806e43defa816 = $('<div id="html_c6fb645f395342aca8f806e43defa816" style="width: 100.0%; height: 100.0%;">Hermanstads strandsväg 1, 00580 Helsingfors, Finland</div>')[0];
+                popup_32a5a90b792946d7865801ed7f5b0181.setContent(html_c6fb645f395342aca8f806e43defa816);
+            
+
+            regular_polygon_marker_4efd789b6a95418389009b5726abd517.bindPopup(popup_32a5a90b792946d7865801ed7f5b0181);
+
+            
+        
+    
+            var regular_polygon_marker_88d42b073a46435fbd262565eac619e5 = new L.RegularPolygonMarker(
+                new L.LatLng(60.21448089999999,25.0919641),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_d987d5c6830543fba84f0e60281c9c2b = L.popup({maxWidth: '300'});
+
+            
+                var html_b9440e0597784e06b224272e3e4b068d = $('<div id="html_b9440e0597784e06b224272e3e4b068d" style="width: 100.0%; height: 100.0%;">Itäväylä, 00900 Helsinki, Finland</div>')[0];
+                popup_d987d5c6830543fba84f0e60281c9c2b.setContent(html_b9440e0597784e06b224272e3e4b068d);
+            
+
+            regular_polygon_marker_88d42b073a46435fbd262565eac619e5.bindPopup(popup_d987d5c6830543fba84f0e60281c9c2b);
+
+            
+        
+    
+            var regular_polygon_marker_1324aa44fd0b4608b6fa936677fab41c = new L.RegularPolygonMarker(
+                new L.LatLng(60.156578100000004,24.9214846),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_606c898a7d964b568c649c370f1c92a8 = L.popup({maxWidth: '300'});
+
+            
+                var html_af47f49cb3f648dab06a783362abeb44 = $('<div id="html_af47f49cb3f648dab06a783362abeb44" style="width: 100.0%; height: 100.0%;">Tyynenmerenkatu 9, 00220 Helsinki, Finland</div>')[0];
+                popup_606c898a7d964b568c649c370f1c92a8.setContent(html_af47f49cb3f648dab06a783362abeb44);
+            
+
+            regular_polygon_marker_1324aa44fd0b4608b6fa936677fab41c.bindPopup(popup_606c898a7d964b568c649c370f1c92a8);
+
+            
+        
+    
+            var regular_polygon_marker_35921deda1b9472ca30b72562582be3c = new L.RegularPolygonMarker(
+                new L.LatLng(60.23489060000001,25.0816923),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_566927df2df34d8b9f4148aaa99d4ad0 = L.popup({maxWidth: '300'});
+
+            
+                var html_3c051795b818473f91f1af119fbb5001 = $('<div id="html_3c051795b818473f91f1af119fbb5001" style="width: 100.0%; height: 100.0%;">Kontulantie 18, 00940 Helsinki, Finland</div>')[0];
+                popup_566927df2df34d8b9f4148aaa99d4ad0.setContent(html_3c051795b818473f91f1af119fbb5001);
+            
+
+            regular_polygon_marker_35921deda1b9472ca30b72562582be3c.bindPopup(popup_566927df2df34d8b9f4148aaa99d4ad0);
+
+            
+        
+    
+            var regular_polygon_marker_6385148255f74cbcb6b425ec396d2e1f = new L.RegularPolygonMarker(
+                new L.LatLng(60.203387899999996,25.042239),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_846a8b890bf44ba39cdd4f5de21641e7 = L.popup({maxWidth: '300'});
+
+            
+                var html_0ff02f5b74ea49729c9219c75ae78774 = $('<div id="html_0ff02f5b74ea49729c9219c75ae78774" style="width: 100.0%; height: 100.0%;">Itäväylä, 00800 Helsinki, Finland</div>')[0];
+                popup_846a8b890bf44ba39cdd4f5de21641e7.setContent(html_0ff02f5b74ea49729c9219c75ae78774);
+            
+
+            regular_polygon_marker_6385148255f74cbcb6b425ec396d2e1f.bindPopup(popup_846a8b890bf44ba39cdd4f5de21641e7);
+
+            
+        
+    
+            var regular_polygon_marker_553147f23dee427687e72453a4ddcc74 = new L.RegularPolygonMarker(
+                new L.LatLng(60.2753891,25.035855),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_2f9769bc58b84acda4ea8b148869a979 = L.popup({maxWidth: '300'});
+
+            
+                var html_7aacba7da5864a1abab98a66556d1c07 = $('<div id="html_7aacba7da5864a1abab98a66556d1c07" style="width: 100.0%; height: 100.0%;">Tapulikaupungintie 3, 00750 Helsinki, Finland</div>')[0];
+                popup_2f9769bc58b84acda4ea8b148869a979.setContent(html_7aacba7da5864a1abab98a66556d1c07);
+            
+
+            regular_polygon_marker_553147f23dee427687e72453a4ddcc74.bindPopup(popup_2f9769bc58b84acda4ea8b148869a979);
+
+            
+        
+    
+            var regular_polygon_marker_9ae099dbd4174faf8babb027661518b1 = new L.RegularPolygonMarker(
+                new L.LatLng(60.263379900000004,25.0291078),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_5399abb81ae34adca91e49e7170c328d = L.popup({maxWidth: '300'});
+
+            
+                var html_212ea57e7c944661af3b1e8d1cce2633 = $('<div id="html_212ea57e7c944661af3b1e8d1cce2633" style="width: 100.0%; height: 100.0%;">Sompionpolku 2, 00730 Helsinki, Finland</div>')[0];
+                popup_5399abb81ae34adca91e49e7170c328d.setContent(html_212ea57e7c944661af3b1e8d1cce2633);
+            
+
+            regular_polygon_marker_9ae099dbd4174faf8babb027661518b1.bindPopup(popup_5399abb81ae34adca91e49e7170c328d);
+
+            
+        
+    
+            var regular_polygon_marker_173c4564ac4447bbb67403775693a51f = new L.RegularPolygonMarker(
+                new L.LatLng(60.22243630000001,24.8718598),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_72d7aa87eb364a40a06c4992f2662d3e = L.popup({maxWidth: '300'});
+
+            
+                var html_2ccc689fb981482289d965012d3b5212 = $('<div id="html_2ccc689fb981482289d965012d3b5212" style="width: 100.0%; height: 100.0%;">Atomitie 5, 00370 Helsinki, Finland</div>')[0];
+                popup_72d7aa87eb364a40a06c4992f2662d3e.setContent(html_2ccc689fb981482289d965012d3b5212);
+            
+
+            regular_polygon_marker_173c4564ac4447bbb67403775693a51f.bindPopup(popup_72d7aa87eb364a40a06c4992f2662d3e);
+
+            
+        
+    
+            var regular_polygon_marker_b3a61640fefb4f5a85051fb3a68ddf36 = new L.RegularPolygonMarker(
+                new L.LatLng(60.1711874,24.94251),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_24b9481fea204f24b571ae5f44bd5567 = L.popup({maxWidth: '300'});
+
+            
+                var html_ddfc1fb862a242858cff7b1f3741d416 = $('<div id="html_ddfc1fb862a242858cff7b1f3741d416" style="width: 100.0%; height: 100.0%;">Rautatientori 1, 00100 Helsinki, Finland</div>')[0];
+                popup_24b9481fea204f24b571ae5f44bd5567.setContent(html_ddfc1fb862a242858cff7b1f3741d416);
+            
+
+            regular_polygon_marker_b3a61640fefb4f5a85051fb3a68ddf36.bindPopup(popup_24b9481fea204f24b571ae5f44bd5567);
+
+            
+        
+    
+            var regular_polygon_marker_42d974d0399d4c3494ad1fbe1136da43 = new L.RegularPolygonMarker(
+                new L.LatLng(60.2306474,24.8840504),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_5854802f7f4f4ded962596133021cc4e = L.popup({maxWidth: '300'});
+
+            
+                var html_8b983ef91979484aa7da2e0e8f2608c6 = $('<div id="html_8b983ef91979484aa7da2e0e8f2608c6" style="width: 100.0%; height: 100.0%;">Kuparitie 8, 00440 Helsinki, Finland</div>')[0];
+                popup_5854802f7f4f4ded962596133021cc4e.setContent(html_8b983ef91979484aa7da2e0e8f2608c6);
+            
+
+            regular_polygon_marker_42d974d0399d4c3494ad1fbe1136da43.bindPopup(popup_5854802f7f4f4ded962596133021cc4e);
+
+            
+        
+    
+            var regular_polygon_marker_eed68a4c595144eab93fba493d03c200 = new L.RegularPolygonMarker(
+                new L.LatLng(60.240163,24.877383000000002),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_f9e8649c5e424686b5060b9a153f0e4e = L.popup({maxWidth: '300'});
+
+            
+                var html_537b8b56ef3a4068aa3752ae3bf92988 = $('<div id="html_537b8b56ef3a4068aa3752ae3bf92988" style="width: 100.0%; height: 100.0%;">Trumstigen 8, 00420 Helsingfors, Finland</div>')[0];
+                popup_f9e8649c5e424686b5060b9a153f0e4e.setContent(html_537b8b56ef3a4068aa3752ae3bf92988);
+            
+
+            regular_polygon_marker_eed68a4c595144eab93fba493d03c200.bindPopup(popup_f9e8649c5e424686b5060b9a153f0e4e);
+
+            
+        
+    
+            var regular_polygon_marker_2984a47c9334444198d2b9935bc01e10 = new L.RegularPolygonMarker(
+                new L.LatLng(60.221633399999995,24.9483202),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_17b84c22da4f4739b77a9a5d2e63d3ab = L.popup({maxWidth: '300'});
+
+            
+                var html_65ff93650901468ea4142601060a0863 = $('<div id="html_65ff93650901468ea4142601060a0863" style="width: 100.0%; height: 100.0%;">Kullatorpsvägen 1, 00620 Helsingfors, Finland</div>')[0];
+                popup_17b84c22da4f4739b77a9a5d2e63d3ab.setContent(html_65ff93650901468ea4142601060a0863);
+            
+
+            regular_polygon_marker_2984a47c9334444198d2b9935bc01e10.bindPopup(popup_17b84c22da4f4739b77a9a5d2e63d3ab);
+
+            
+        
+    
+            var regular_polygon_marker_1740c3cd872c499896ae94151ab76ad7 = new L.RegularPolygonMarker(
+                new L.LatLng(60.251498299999994,25.0125655),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_1b83c0ea32c74c2894699a155f412854 = L.popup({maxWidth: '300'});
+
+            
+                var html_5f5a3987072542e7a87e5aa4a50e91ce = $('<div id="html_5f5a3987072542e7a87e5aa4a50e91ce" style="width: 100.0%; height: 100.0%;">Malminkaari 15, 00700 Helsinki, Finland</div>')[0];
+                popup_1b83c0ea32c74c2894699a155f412854.setContent(html_5f5a3987072542e7a87e5aa4a50e91ce);
+            
+
+            regular_polygon_marker_1740c3cd872c499896ae94151ab76ad7.bindPopup(popup_1b83c0ea32c74c2894699a155f412854);
+
+            
+        
+    
+            var regular_polygon_marker_09fd1b0936a74469bfdaa313e4c56822 = new L.RegularPolygonMarker(
+                new L.LatLng(60.21778230000001,24.893153),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_4ecc3b9abbd94865ac47dde667e9227f = L.popup({maxWidth: '300'});
+
+            
+                var html_8376b7e1b995479abfdd2cd328fd2ade = $('<div id="html_8376b7e1b995479abfdd2cd328fd2ade" style="width: 100.0%; height: 100.0%;">Kylätie 23, 00320 Helsinki, Finland</div>')[0];
+                popup_4ecc3b9abbd94865ac47dde667e9227f.setContent(html_8376b7e1b995479abfdd2cd328fd2ade);
+            
+
+            regular_polygon_marker_09fd1b0936a74469bfdaa313e4c56822.bindPopup(popup_4ecc3b9abbd94865ac47dde667e9227f);
+
+            
+        
+    
+            var regular_polygon_marker_fbf959336b124d5ca066db8f1584fe9a = new L.RegularPolygonMarker(
+                new L.LatLng(60.24854710000001,24.86186),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_1c6916a989f14f8cb3e7c31d2f4c0076 = L.popup({maxWidth: '300'});
+
+            
+                var html_010e4d1c681e4b2c8168d86043f8e436 = $('<div id="html_010e4d1c681e4b2c8168d86043f8e436" style="width: 100.0%; height: 100.0%;">Malminkartanontie 17, 00410 Helsinki, Finland</div>')[0];
+                popup_1c6916a989f14f8cb3e7c31d2f4c0076.setContent(html_010e4d1c681e4b2c8168d86043f8e436);
+            
+
+            regular_polygon_marker_fbf959336b124d5ca066db8f1584fe9a.bindPopup(popup_1c6916a989f14f8cb3e7c31d2f4c0076);
+
+            
+        
+    
+            var regular_polygon_marker_2e879eb3b95d4e3c97785e804bb030df = new L.RegularPolygonMarker(
+                new L.LatLng(60.2291135,24.9670533),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_602088371e004979a6d46def4c030b5b = L.popup({maxWidth: '300'});
+
+            
+                var html_31d4c3bbd00948a3b2ac069dc4c116e5 = $('<div id="html_31d4c3bbd00948a3b2ac069dc4c116e5" style="width: 100.0%; height: 100.0%;">Åggelby torg 2b, 00640 Helsingfors, Finland</div>')[0];
+                popup_602088371e004979a6d46def4c030b5b.setContent(html_31d4c3bbd00948a3b2ac069dc4c116e5);
+            
+
+            regular_polygon_marker_2e879eb3b95d4e3c97785e804bb030df.bindPopup(popup_602088371e004979a6d46def4c030b5b);
+
+            
+        
+    
+            var regular_polygon_marker_51a75a92e8754bc6b5f1444bd33d6974 = new L.RegularPolygonMarker(
+                new L.LatLng(60.1986856,24.9334051),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_a2f1e8c987d243208a3ee2d93df3d9c5 = L.popup({maxWidth: '300'});
+
+            
+                var html_f469d6a6189a40b09b1ba4a7cbc10067 = $('<div id="html_f469d6a6189a40b09b1ba4a7cbc10067" style="width: 100.0%; height: 100.0%;">Bangårdsvägen 6, 00101 Helsingfors, Finland</div>')[0];
+                popup_a2f1e8c987d243208a3ee2d93df3d9c5.setContent(html_f469d6a6189a40b09b1ba4a7cbc10067);
+            
+
+            regular_polygon_marker_51a75a92e8754bc6b5f1444bd33d6974.bindPopup(popup_a2f1e8c987d243208a3ee2d93df3d9c5);
+
+            
+        
+    
+            var regular_polygon_marker_78e8865d5af24628981e4d38bbee9062 = new L.RegularPolygonMarker(
+                new L.LatLng(60.22401389999999,24.8609335),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_9693463ab6ce45da8ade97280ba23313 = L.popup({maxWidth: '300'});
+
+            
+                var html_044430ff6b4049cea782f2d7b5879801 = $('<div id="html_044430ff6b4049cea782f2d7b5879801" style="width: 100.0%; height: 100.0%;">Pitäjänmäentie 15, 00370 Helsinki, Finland</div>')[0];
+                popup_9693463ab6ce45da8ade97280ba23313.setContent(html_044430ff6b4049cea782f2d7b5879801);
+            
+
+            regular_polygon_marker_78e8865d5af24628981e4d38bbee9062.bindPopup(popup_9693463ab6ce45da8ade97280ba23313);
+
+            
+        
+    
+            var regular_polygon_marker_4b1760a27b2a42e08190d579b6ebb236 = new L.RegularPolygonMarker(
+                new L.LatLng(60.2436961,24.9934979),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_fe078e9f25104be39affcffdd98ab04f = L.popup({maxWidth: '300'});
+
+            
+                var html_811e114ace264dcbb7f87f23fa4ec7e3 = $('<div id="html_811e114ace264dcbb7f87f23fa4ec7e3" style="width: 100.0%; height: 100.0%;">Eskolantie 2, 00720 Helsinki, Finland</div>')[0];
+                popup_fe078e9f25104be39affcffdd98ab04f.setContent(html_811e114ace264dcbb7f87f23fa4ec7e3);
+            
+
+            regular_polygon_marker_4b1760a27b2a42e08190d579b6ebb236.bindPopup(popup_fe078e9f25104be39affcffdd98ab04f);
+
+            
+        
+    
+            var regular_polygon_marker_af88ef4c1246461aa04931e1e56ef6f2 = new L.RegularPolygonMarker(
+                new L.LatLng(60.24444239999999,25.040583000000005),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_0d090a9f11524e9889f8e64a1744f3fb = L.popup({maxWidth: '300'});
+
+            
+                var html_0828f1fd27a042dcaa3776e5b2ef4659 = $('<div id="html_0828f1fd27a042dcaa3776e5b2ef4659" style="width: 100.0%; height: 100.0%;">Tattariharjuntie, 00700 Helsinki, Finland</div>')[0];
+                popup_0d090a9f11524e9889f8e64a1744f3fb.setContent(html_0828f1fd27a042dcaa3776e5b2ef4659);
+            
+
+            regular_polygon_marker_af88ef4c1246461aa04931e1e56ef6f2.bindPopup(popup_0d090a9f11524e9889f8e64a1744f3fb);
+
+            
+        
+    
+            var regular_polygon_marker_73f430e0c8174436b0cb12fa94cb17a7 = new L.RegularPolygonMarker(
+                new L.LatLng(60.20966609999999,25.0778094),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_2ec50c811ccd4a2389ba59a6e13e92fc = L.popup({maxWidth: '300'});
+
+            
+                var html_b3fcba623c5e4ef394a8fd577f5530ef = $('<div id="html_b3fcba623c5e4ef394a8fd577f5530ef" style="width: 100.0%; height: 100.0%;">Tallinnanaukio 1, 00930 Helsinki, Finland</div>')[0];
+                popup_2ec50c811ccd4a2389ba59a6e13e92fc.setContent(html_b3fcba623c5e4ef394a8fd577f5530ef);
+            
+
+            regular_polygon_marker_73f430e0c8174436b0cb12fa94cb17a7.bindPopup(popup_2ec50c811ccd4a2389ba59a6e13e92fc);
+
+            
+        
+    
+            var regular_polygon_marker_1420b375f790419189ff6b4e17d1687a = new L.RegularPolygonMarker(
+                new L.LatLng(60.207510199999994,25.1424936),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_e85866003d2343ef942ff64ba4b7c263 = L.popup({maxWidth: '300'});
+
+            
+                var html_69bf8357dede4133b7c3fd4000065e93 = $('<div id="html_69bf8357dede4133b7c3fd4000065e93" style="width: 100.0%; height: 100.0%;">Tyynylaavantie 7, 00980 Helsinki, Finland</div>')[0];
+                popup_e85866003d2343ef942ff64ba4b7c263.setContent(html_69bf8357dede4133b7c3fd4000065e93);
+            
+
+            regular_polygon_marker_1420b375f790419189ff6b4e17d1687a.bindPopup(popup_e85866003d2343ef942ff64ba4b7c263);
+
+            
+        
+    
+            var regular_polygon_marker_58b9b562fefb4c8e8c645d65bfb361ff = new L.RegularPolygonMarker(
+                new L.LatLng(60.22559900000001,25.0756547),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_97eee0c180014c6c9c3f4b9644c7b38a = L.popup({maxWidth: '300'});
+
+            
+                var html_bd7e4325ccf74244958047901d84fa37 = $('<div id="html_bd7e4325ccf74244958047901d84fa37" style="width: 100.0%; height: 100.0%;">Varvasmäenkuja, 00920 Helsinki, Finland</div>')[0];
+                popup_97eee0c180014c6c9c3f4b9644c7b38a.setContent(html_bd7e4325ccf74244958047901d84fa37);
+            
+
+            regular_polygon_marker_58b9b562fefb4c8e8c645d65bfb361ff.bindPopup(popup_97eee0c180014c6c9c3f4b9644c7b38a);
+
+            
+        
+    
+            var regular_polygon_marker_bc3fccd284044063ba95e005628857b6 = new L.RegularPolygonMarker(
+                new L.LatLng(60.2382054,25.1080054),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_a4a63dc46beb4222a96aca209a0ba90f = L.popup({maxWidth: '300'});
+
+            
+                var html_71cb5550b52347ba9e5fac7d9927f16c = $('<div id="html_71cb5550b52347ba9e5fac7d9927f16c" style="width: 100.0%; height: 100.0%;">Mellungsbackastråket 6, 00970 Helsingfors, Finland</div>')[0];
+                popup_a4a63dc46beb4222a96aca209a0ba90f.setContent(html_71cb5550b52347ba9e5fac7d9927f16c);
+            
+
+            regular_polygon_marker_bc3fccd284044063ba95e005628857b6.bindPopup(popup_a4a63dc46beb4222a96aca209a0ba90f);
+
+            
+        
+    
+            var regular_polygon_marker_30741ae3e4fd4493a3d48e6faa250190 = new L.RegularPolygonMarker(
+                new L.LatLng(60.18789030000001,24.9609122),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_49226ceb48184d18aca4986a5f071c50 = L.popup({maxWidth: '300'});
+
+            
+                var html_b0735fdc061d4dbf90f79326a1b026de = $('<div id="html_b0735fdc061d4dbf90f79326a1b026de" style="width: 100.0%; height: 100.0%;">Vasastigen 2, 00101 Helsingfors, Finland</div>')[0];
+                popup_49226ceb48184d18aca4986a5f071c50.setContent(html_b0735fdc061d4dbf90f79326a1b026de);
+            
+
+            regular_polygon_marker_30741ae3e4fd4493a3d48e6faa250190.bindPopup(popup_49226ceb48184d18aca4986a5f071c50);
+
+            
+        
+    
+            var regular_polygon_marker_ef0794179109489799bc78fe795e735f = new L.RegularPolygonMarker(
+                new L.LatLng(60.19413939999999,25.0291263),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_a0c2b1d4a7c44a3395cec30e929616d4 = L.popup({maxWidth: '300'});
+
+            
+                var html_1bd10150657649ab8c20312a455493d0 = $('<div id="html_1bd10150657649ab8c20312a455493d0" style="width: 100.0%; height: 100.0%;">Hiihtäjäntie 2, 00810 Helsinki, Finland</div>')[0];
+                popup_a0c2b1d4a7c44a3395cec30e929616d4.setContent(html_1bd10150657649ab8c20312a455493d0);
+            
+
+            regular_polygon_marker_ef0794179109489799bc78fe795e735f.bindPopup(popup_a0c2b1d4a7c44a3395cec30e929616d4);
+
+            
+        
+    
+            var regular_polygon_marker_84b06105a6694bfa8717efde12fadeb2 = new L.RegularPolygonMarker(
+                new L.LatLng(60.18837519999999,25.0068399),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_dc4c86773a3b4c61983dd5e75e815838 = L.popup({maxWidth: '300'});
+
+            
+                var html_a346f064f5ca41c7ba9d5581ae1ecb35 = $('<div id="html_a346f064f5ca41c7ba9d5581ae1ecb35" style="width: 100.0%; height: 100.0%;">Ukko-Pekan porras, 00570 Helsinki, Finland</div>')[0];
+                popup_dc4c86773a3b4c61983dd5e75e815838.setContent(html_a346f064f5ca41c7ba9d5581ae1ecb35);
+            
+
+            regular_polygon_marker_84b06105a6694bfa8717efde12fadeb2.bindPopup(popup_dc4c86773a3b4c61983dd5e75e815838);
+
+            
+        
+    
+            var regular_polygon_marker_b0034b77f8774a038513d856f91a63ca = new L.RegularPolygonMarker(
+                new L.LatLng(60.17938620000001,24.9494874),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_4fb86bfb0a7d4a678cac98678dd6d831 = L.popup({maxWidth: '300'});
+
+            
+                var html_25475c3d102d4965a39789f9141f9bb2 = $('<div id="html_25475c3d102d4965a39789f9141f9bb2" style="width: 100.0%; height: 100.0%;">Siltasaarenkatu 16, 00530 Helsinki, Finland</div>')[0];
+                popup_4fb86bfb0a7d4a678cac98678dd6d831.setContent(html_25475c3d102d4965a39789f9141f9bb2);
+            
+
+            regular_polygon_marker_b0034b77f8774a038513d856f91a63ca.bindPopup(popup_4fb86bfb0a7d4a678cac98678dd6d831);
+
+            
+        
+    
+            var regular_polygon_marker_19a7cf21b0f94a8ca4b98b36195dbb7d = new L.RegularPolygonMarker(
+                new L.LatLng(60.16948090000001,24.9337569),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_25a7c095799844489f65b3711dbb566d = L.popup({maxWidth: '300'});
+
+            
+                var html_2694de787d8d4c5b9eb2281e66be1890 = $('<div id="html_2694de787d8d4c5b9eb2281e66be1890" style="width: 100.0%; height: 100.0%;">Urho Kekkosen katu 1, 00100 Helsinki, Finland</div>')[0];
+                popup_25a7c095799844489f65b3711dbb566d.setContent(html_2694de787d8d4c5b9eb2281e66be1890);
+            
+
+            regular_polygon_marker_19a7cf21b0f94a8ca4b98b36195dbb7d.bindPopup(popup_25a7c095799844489f65b3711dbb566d);
+
+            
+        
+    
+            var regular_polygon_marker_5add6daf74354d00aa3cd705fe1b53f6 = new L.RegularPolygonMarker(
+                new L.LatLng(60.165001399999994,24.9250072),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_bfe2722d8df947d6b7d1186ebd73e7a7 = L.popup({maxWidth: '300'});
+
+            
+                var html_469ceb16c8b54c2dbea3672958dc6b3f = $('<div id="html_469ceb16c8b54c2dbea3672958dc6b3f" style="width: 100.0%; height: 100.0%;">Gräsviksgatan 17, 00101 Helsingfors, Finland</div>')[0];
+                popup_bfe2722d8df947d6b7d1186ebd73e7a7.setContent(html_469ceb16c8b54c2dbea3672958dc6b3f);
+            
+
+            regular_polygon_marker_5add6daf74354d00aa3cd705fe1b53f6.bindPopup(popup_bfe2722d8df947d6b7d1186ebd73e7a7);
+
+            
+        
+    
+            var regular_polygon_marker_656e9dd2f6b54fb0837ad95cdcb9fcca = new L.RegularPolygonMarker(
+                new L.LatLng(60.15906900000001,24.9214046),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_27add79390594ac2a99015ccc8d807d0 = L.popup({maxWidth: '300'});
+
+            
+                var html_e51ba024f48d472f97bbc3f3629baa9d = $('<div id="html_e51ba024f48d472f97bbc3f3629baa9d" style="width: 100.0%; height: 100.0%;">Stillahavsgatan 3, 00220 Helsingfors, Finland</div>')[0];
+                popup_27add79390594ac2a99015ccc8d807d0.setContent(html_e51ba024f48d472f97bbc3f3629baa9d);
+            
+
+            regular_polygon_marker_656e9dd2f6b54fb0837ad95cdcb9fcca.bindPopup(popup_27add79390594ac2a99015ccc8d807d0);
+
+            
+        
+    
+            var regular_polygon_marker_38ed5560bae749d99fdedd1304db8b01 = new L.RegularPolygonMarker(
+                new L.LatLng(60.1719108,24.946851400000003),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_0b245e93e2084e65b8d2cec6d2ced152 = L.popup({maxWidth: '300'});
+
+            
+                var html_1102c24c95044eeba5396da76c810a76 = $('<div id="html_1102c24c95044eeba5396da76c810a76" style="width: 100.0%; height: 100.0%;">Vilhelmsgatan 4, 00101 Helsingfors, Finland</div>')[0];
+                popup_0b245e93e2084e65b8d2cec6d2ced152.setContent(html_1102c24c95044eeba5396da76c810a76);
+            
+
+            regular_polygon_marker_38ed5560bae749d99fdedd1304db8b01.bindPopup(popup_0b245e93e2084e65b8d2cec6d2ced152);
+
+            
+        
+    
+            var regular_polygon_marker_56b77f333d5a4b8ba78df02083718064 = new L.RegularPolygonMarker(
+                new L.LatLng(60.20548979999999,25.1204966),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 6,
+                    rotation: 0,
+                    radius: 8
+                    }
+                )
+                .addTo(marker_cluster_c2488562eb7e478087394f6774f79b9e);
+            
+    
+            var popup_b77ff993e1434778ab5db21b8e9208b5 = L.popup({maxWidth: '300'});
+
+            
+                var html_5063e701f174478c9efc124619f2621f = $('<div id="html_5063e701f174478c9efc124619f2621f" style="width: 100.0%; height: 100.0%;">Torisilta, 00980 Helsinki, Finland</div>')[0];
+                popup_b77ff993e1434778ab5db21b8e9208b5.setContent(html_5063e701f174478c9efc124619f2621f);
+            
+
+            regular_polygon_marker_56b77f333d5a4b8ba78df02083718064.bindPopup(popup_b77ff993e1434778ab5db21b8e9208b5);
+
+            
+        
+</script>

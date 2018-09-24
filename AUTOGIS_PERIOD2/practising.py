@@ -1,0 +1,29 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Oct 28 20:25:51 2017
+
+@author: oyeda
+"""
+
+lowo = [9,11,3,7]
+print(lowo)
+lowo[2]=4
+print(lowo)
+lowo[-1:]
+
+"lo{w}o{f},{j}".format(f=4, j=8, w= "fdbjhfd").upper()
+
+for l in enumerate(lowo):
+    print(l)
+
+if any ([p%2==0 for p in lowo]):
+    print("even present")
+else:
+    print("you must be mad")
+
+if all(k<2 for k in lowo):
+    print("great guy, many are less than 2")
+else:
+    print("be reasonable, your list are more than 2")
+
+    

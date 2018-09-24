@@ -1,0 +1,7 @@
+id;address
+1;Itäkatu 1-7, 00930 Helsinki, Finland
+2;Mannerheimintie 14–20, 00100 Helsinki, Finland
+3;Piispansilta 11, 02230 Espoo, Finland
+4;Leppävaarankatu 3-9, 02600 Espoo, Finland
+5;Vantaanportinkatu 3, 01510 Vantaa, Finland
+6;Kalasataman Metroasema, 00580 Helsinki, Finland

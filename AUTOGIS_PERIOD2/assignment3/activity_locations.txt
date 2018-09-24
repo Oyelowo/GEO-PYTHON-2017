@@ -1,0 +1,3 @@
+id;addre;place
+0;Linnoituksentie 10, 00940 Helsinki, Finland;home
+1;Gustaf Hällströmin katu 2, 00560 Helsinki, Finland;work
